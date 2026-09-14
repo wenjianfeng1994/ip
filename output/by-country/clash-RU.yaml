@@ -6,22 +6,9 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
   type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 185.148.106.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   tls: false
   skip-cert-verify: true
@@ -29,20 +16,27 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+      Host: vms.lifetime54.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 108.162.198.178
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 104.21.70.21
+  port: 8080
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
   udp: true
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls+
+    path: /rN50nmm9L1DeY73C?ed=2560
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  cipher: chacha20-ietf-poly1305
+  password: jIlQi9jGPJd7KHMx6Y4+JbaNoWSWfe2A73U4J4o0Qrs=
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   type: vless
   server: 46.8.200.91
@@ -58,12 +52,19 @@ proxies:
     headers:
       Host: cf3.rumedia-cdn.com
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  type: ss
-  server: 195.58.48.137
-  port: 60111
-  cipher: aes-256-gcm
-  password: 8ad9d72a5571df86
+  type: vless
+  server: 66.81.247.155
+  port: 2083
+  uuid: 6cc29a05-4828-4e48-a34a-20b7ada60e85
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: testmikonim.hydrymhmdamyn7.workers.dev
+  network: ws
+  ws-opts:
+    path: /OAZko425kNFF0PpQ
+    headers:
+      Host: testmikonim.hydrymhmdamyn7.workers.dev
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   type: vless
   server: 78.159.247.246
