@@ -4,27 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - xiaohe
-  type: vmess
-  server: test-tun.armtech.ir
+- name: 🇷🇴 RO 01 - xiaohe
+  type: ss
+  server: 154.46.31.106
   port: 443
-  uuid: c4e24fd0-2194-44f5-a058-69df3dc035a0
-  alterId: 0
-  cipher: auto
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
   udp: true
-  tls: false
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇷🇴 RO 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - xiaohe
+  - 🇷🇴 RO 01 - xiaohe
 rules:
 - MATCH,PROXIES
