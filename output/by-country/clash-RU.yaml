@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: ss
-  server: 62.113.41.165
-  port: 888
-  cipher: chacha20-ietf-poly1305
-  password: hF-qqin2wYhP7zS47SyR0Q
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
   server: fbsv6.guardora.pro
   port: 443
@@ -25,6 +18,13 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  type: ss
+  server: 62.113.41.165
+  port: 888
+  cipher: chacha20-ietf-poly1305
+  password: hF-qqin2wYhP7zS47SyR0Q
+  udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   type: vless
   server: 46.8.200.91
