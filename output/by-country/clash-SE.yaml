@@ -30,7 +30,7 @@ proxies:
   ws-opts:
     path: /merky-connect/de6/
     headers:
-      Host: 94.143.231.146
+      Host: sub.merky.top
 proxy-groups:
 - name: PROXIES
   type: select
